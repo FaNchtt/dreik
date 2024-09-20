@@ -98,9 +98,13 @@
             animation: textGradient3 10s ease infinite;
         }
 
+        .fact4 {
+            background-image: linear-gradient(270deg, #ffa07a, #ff4500, #dc143c);
+            animation: textGradient1 10s ease infinite;
+        }
+
         .contacts {
-            position: absolute;
-            bottom: 10px;
+            margin-top: 50px;
             font-size: 0.8em;
             color: #ffffff;
         }
@@ -130,6 +134,10 @@
             padding: 5px;
             border-radius: 5px;
         }
+
+        .spotify-link {
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
@@ -144,25 +152,29 @@
     <p class="subtitle" id="subtitle">ai developer, buba one of the examples 👻</p>
     <div class="facts-container">
         <div class="fact fact1" id="fact1">Programmer, main languages, Python, C++, HTML.</div>
-        <div class="fact fact2" id="fact2">Booba is my only successful and well-working neural network. Release and upload to the public closer to 2025.</div>
+        <div class="fact fact2" id="fact2">Buba is my only successful and well-working neural network. Release and upload to the public closer to 2025.</div>
         <div class="fact fact3" id="fact3">I try to be as responsive and comfortable as possible, thank you for visiting my page 🫢❤️.</div>
+        <div class="fact fact4" id="fact4">I also do music, my nickname is 'Dreik Succubus', you can look below on Spotify. The name of the group is dreiki.</div>
     </div>
     <div class="contacts">
         <a href="https://discord.com/invite/UCAxhEUzrM" target="_blank">Discord</a>
         <a href="https://t.me/dreikxio" target="_blank">Telegram</a>
+        <a class="spotify-link" href="https://open.spotify.com/artist/4jipBJQ7OZ6sQJ6SnPoZDh?si=CKmb6EmSR82shnA2shMcgQ" target="_blank">Spotify</a>
     </div>
 
     <script>
         const facts = {
             en: [
                 "Programmer, main languages, Python, C++, HTML.",
-                "Booba is my only successful and well-working neural network. Release and upload to the public closer to 2025.",
-                "I try to be as responsive and comfortable as possible, thank you for visiting my page 🫢❤️."
+                "Buba is my only successful and well-working neural network. Release and upload to the public closer to 2025.",
+                "I try to be as responsive and comfortable as possible, thank you for visiting my page 🫢❤️.",
+                "I also do music, my nickname is 'Dreik Succubus', you can look below on Spotify. The name of the group is dreiki."
             ],
             ru: [
                 "Программист, основные языки: Python, C++, HTML.",
-                "Booba - моя единственная успешная и хорошо работающая нейросеть. Выпуск и публикация ближе к 2025 году.",
-                "Я стараюсь быть максимально отзывчивым и удобным, спасибо за посещение моей страницы 🫢❤️."
+                "Buba - моя единственная успешная и хорошо работающая нейросеть. Выпуск и публикация ближе к 2025 году.",
+                "Я стараюсь быть максимально отзывчивым и удобным, спасибо за посещение моей страницы 🫢❤️.",
+                "Так же я занимаюсь музыкой, мой псевдоним 'Дрейк Суккубов', можешь заглянуть ниже на спотифай. Название группы dreiki."
             ]
         };
 
@@ -177,8 +189,8 @@
             document.getElementById('fact1').textContent = facts[language][0];
             document.getElementById('fact2').textContent = facts[language][1];
             document.getElementById('fact3').textContent = facts[language][2];
+            document.getElementById('fact4').textContent = facts[language][3];
         }
     </script>
 </body>
 </html>
-
